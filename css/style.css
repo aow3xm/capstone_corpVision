@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Product Sans Medium", sans-serif;
+  font-size: 10px;
+}
+
+:root {
+  /* màu chủ đạo */
+  --primary-color: #100f19;
+  /* màu phụ */
+  --secondary-color: #151421;
+}
+
+/* GALLERY */
+.gallery {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.gallery-content.title h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.gallery-content.title p {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.gallery-content.grid {
+}
