@@ -1,134 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Corp Vision</title>
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-            crossorigin="anonymous">
-        <!-- google-sans font -->
+        <!-- GFonts -->
         <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+        <!-- GFonts -->
+        <!-- BS CSS -->
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous">
+        <!-- BS CSS -->
+
+        <!-- FA -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- FA -->
+
+        <!-- LIGHTBOX2 -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css"
+            integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- LIGHTBOX2 -->
+
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-
     <body>
-        <header>
-        </header>
         <main>
             <section class="gallery">
-                <div class="container gallery-content">
-                    <div class="gallery-content title">
-                        <h3>OUR GALLERY</h3>
-                        <p>Successful projects we've done</p>
+                <div class="container gallery__content">
+                    <div class="title">
+                        <p>OUR GALLERY</p>
+                        <h3>Sucessful projects we've done</h3>
                     </div>
-                    <div class="gallery-content grid">
+                    <div class="article">
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 item">
-                                <a
-                                    href="./assets/images/c1.jpg"
-                                    data-lightbox="example-set"
-                                    data-title="Project 1" class="zoom d-block">
-                                    <img class="card-img-bottom d-block"
-                                        src="./assets/images/c1.jpg"
-                                        alt="Card image cap">
-                                    <span class="overlay__hover"></span>
-                                    <span class="hover-content">
-                                        <span class="title">Project 1</span>
-                                        <span class="content">Quisque ut lectus,
-                                            eros et, sed commodo risus.</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-6 item mt-md-0 mt-4">
-                                <a
-                                    href="./assets/images/c2.jpg"
-                                    data-lightbox="example-set"
-                                    data-title="Project 2" class="zoom d-block">
-                                    <img class="card-img-bottom d-block"
-                                        src="./assets/images/c2.jpg"
-                                        alt="Card image cap">
-                                    <span class="overlay__hover"></span>
-                                    <span class="hover-content">
-                                        <span class="title">Project 2</span>
-                                        <span class="content">Quisque ut lectus,
-                                            eros et, sed commodo risus.</span>
-                                    </span>
-                                </a>
-                            </div>
+                            <div class="item col-md-6 col-lg-4 mt-5">
+                                <a href="./assets/images/c1.jpg"
+                                    data-lightbox="./assets/images/c1.jpg"
+                                    data-title="Caption 1">
+                                    <img src="./assets/images/c1.jpg" alt>
+                                    <div class="overlay">
 
-                            <div class="col-lg-4 col-md-6 item mt-lg-0 mt-4">
-                                <a
-                                    href="./assets/images/c3.jpg"
-                                    data-lightbox="example-set"
-                                    data-title="Project 3" class="zoom d-block">
-                                    <img class="card-img-bottom d-block"
-                                        src="./assets/images/c3.jpg"
-                                        alt="Card image cap">
-                                    <span class="overlay__hover"></span>
-                                    <span class="hover-content">
-                                        <span class="title">Project 3</span>
-                                        <span class="content">Quisque ut lectus,
-                                            eros et, sed commodo risus.</span>
-                                    </span>
+                                    </div>
                                 </a>
                             </div>
-
-                            <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                                <a
-                                    href="./assets/images/c1.jpg"
-                                    data-lightbox="example-set"
-                                    data-title="Project 4" class="zoom d-block">
-                                    <img class="card-img-bottom d-block"
-                                        src="./assets/images/c4.jpg"
-                                        alt="Card image cap">
-                                    <span class="overlay__hover"></span>
-                                    <span class="hover-content">
-                                        <span class="title">Project 4</span>
-                                        <span class="content">Quisque ut lectus,
-                                            eros et, sed commodo risus.</span>
-                                    </span>
+                            <div class="item col-md-6 col-lg-4 mt-5">
+                                <a href="./assets/images/c1.jpg"
+                                    data-lightbox="./assets/images/c1.jpg"
+                                    data-title="Caption 1">
+                                    <img src="./assets/images/c1.jpg" alt>
                                 </a>
                             </div>
-
-                            <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                                <a
-                                    href="./assets/images/c5.jpg"
-                                    data-lightbox="example-set"
-                                    data-title="Project 5" class="zoom d-block">
-                                    <img class="card-img-bottom d-block"
-                                        src="./assets/images/c5.jpg"
-                                        alt="Card image cap">
-                                    <span class="overlay__hover"></span>
-                                    <span class="hover-content">
-                                        <span class="title">Project 5</span>
-                                        <span class="content">Quisque ut lectus,
-                                            eros et, sed commodo risus.</span>
-                                    </span>
+                            <div class="item col-md-6 col-lg-4 mt-5">
+                                <a href="./assets/images/c1.jpg"
+                                    data-lightbox="./assets/images/c1.jpg"
+                                    data-title="Caption 1">
+                                    <img src="./assets/images/c1.jpg" alt>
                                 </a>
                             </div>
-
-                            <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                                <a
-                                    href="./assets/images/c6.jpg"
-                                    data-lightbox="example-set"
-                                    data-title="Project 6" class="zoom d-block">
-                                    <img class="card-img-bottom d-block"
-                                        src="./assets/images/c6.jpg"
-                                        alt="Card image cap">
-                                    <span class="overlay__hover"></span>
-                                    <span class="hover-content">
-                                        <span class="title">Project 6</span>
-                                        <span class="content">Quisque ut lectus,
-                                            eros et, sed commodo risus.</span>
-                                    </span>
+                            <div class="item col-md-6 col-lg-4 mt-5">
+                                <a href="./assets/images/c1.jpg"
+                                    data-lightbox="./assets/images/c1.jpg"
+                                    data-title="Caption 1">
+                                    <img src="./assets/images/c1.jpg" alt>
+                                </a>
+                            </div>
+                            <div class="item col-md-6 col-lg-4 mt-5">
+                                <a href="./assets/images/c1.jpg"
+                                    data-lightbox="./assets/images/c1.jpg"
+                                    data-title="Caption 1">
+                                    <img src="./assets/images/c1.jpg" alt>
+                                </a>
+                            </div>
+                            <div class="item col-md-6 col-lg-4 mt-5">
+                                <a href="./assets/images/c1.jpg"
+                                    data-lightbox="./assets/images/c1.jpg"
+                                    data-title="Caption 1">
+                                    <img src="./assets/images/c1.jpg" alt>
                                 </a>
                             </div>
                         </div>
@@ -136,21 +92,36 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous">
-  </script>
 
+        <!-- BS CSS -->
         <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-            crossorigin="anonymous">
-  </script>
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+        <!-- BS CSS -->
+
+        <!-- JQUERY -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- JQUERY -->
+        <!-- LIGHTBOX -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+            integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- LIGHTBOX -->
+
+        <script>
+            lightbox.option({
+              'resizeDuration': 200,
+              'wrapAround': true
+            })
+        </script>
     </body>
-
 </html>

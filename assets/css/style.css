@@ -11,9 +11,7 @@ html {
 }
 
 :root {
-  /* màu chủ đạo */
   --primary-color: #100f19;
-  /* màu phụ */
   --secondary-color: #151421;
   --layout-color: rgba(0, 0, 0, 0.5);
 }
@@ -22,89 +20,47 @@ html {
 .gallery {
   background-color: var(--primary-color);
 }
-.gallery-content.title {
+
+.gallery__content .title {
   text-align: center;
+  color: white;
 }
-.gallery-content.title h3 {
+
+.gallery__content .title p {
+  color: #737373;
   font-size: 1.5rem;
-  color: #7e7d7d;
-}
-.gallery-content.title p {
-  font-size: 3rem;
-  color: #fff;
+  font-weight: 800;
 }
 
-.gallery-content.grid .row {
+.gallery__content .title h3 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.gallery__content .article {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.gallery-content.grid .item {
-  width: 33.3%;
-  max-width: 33.3%;
 }
 
-.gallery-content.grid a {
+.gallery__content .article .item a {
   position: relative;
-  overflow: hidden;
+  display: block;
 }
-.gallery-content.grid img {
+.gallery__content .article .item {
+  width: 33.3%;
+}
+.gallery__content .article .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.gallery-content.grid span.overlay__hover {
+.gallery__content .article .item .overlay {
   position: absolute;
-  inset: 0 0;
+  inset: 0 0 0 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--layout-color);
-  transition: all 0.3s;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1;
-}
-.gallery-content.grid a:hover span.overlay__hover {
-  opacity: 1;
-  visibility: visible;
-}
-.gallery-content.grid span.hover-content {
-  position: absolute;
-  bottom: -100%;
-  left: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s;
-  padding: 46px 50px;
-  color: #ffffff;
-  z-index: 99;
-}
-.gallery-content.grid a:hover .hover-content {
-  bottom: 0;
-  visibility: visible;
-  opacity: 1;
+  /* background-color: black; */
 }
 
-.gallery-content.grid span.title {
-  font-size: 2rem;
-  display: block;
-}
-
-.gallery-content.grid .hover-content span.content {
-  font-size: 1.5rem;
-  display: block;
-}
-
-.gallery-content.grid img.card-img-bottom {
-  transition: 300ms linear;
-}
-
-.gallery-content.grid a:hover img.card-img-bottom {
-  overflow: hidden;
-  transform: scale(1.1);
+.gallery__content .article .overlay p {
 }
