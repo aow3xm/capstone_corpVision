@@ -44,23 +44,57 @@ html {
 .gallery__content .article .item a {
   position: relative;
   display: block;
+  overflow: hidden;
 }
 .gallery__content .article .item {
   width: 33.3%;
 }
-.gallery__content .article .item img {
+.gallery__content .article .item .gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.5s;
 }
-
-.gallery__content .article .item .overlay {
+.gallery__content .article .item a:hover .gallery__img {
+  transform: scale(1.2);
+}
+.gallery__content .article .item .gallery__overlay {
   position: absolute;
   inset: 0 0 0 0;
   width: 100%;
   height: 100%;
-  /* background-color: black; */
+  background-color: var(--layout-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
 }
 
-.gallery__content .article .overlay p {
+.gallery__content .article .item a:hover .gallery__overlay {
+  opacity: 1;
+  visibility: visible;
 }
+
+.gallery__content .article .item .hover__content {
+  position: absolute;
+  inset: auto auto 0 0;
+  padding: 30px 50px;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.gallery__content .article .item a:hover .hover__content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.gallery__content .article .item .hover__content h3 {
+  font-size: 3rem;
+}
+
+.gallery__content .article .item .hover__content p {
+  font-size: 1.5rem;
+}
+
+/*  */
