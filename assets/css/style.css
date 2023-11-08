@@ -22,6 +22,202 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+/* SEARCH ACTIVE */
+body.search-active {
+  overflow: hidden; 
+}
+body.search-active .search-input {
+  opacity: 1;
+  transform: none;
+  pointer-events: all; 
+}
+body.search-active .closeSearch__icon {
+  opacity: 1;
+  transform: rotate(-90deg); 
+}
+body.search-active .search__btn {
+  cursor: default; 
+}
+body.search-active .search__btn .btn-material {
+  transform: scale(70); 
+} body.search-active .search__btn .icon-material-search {
+  opacity: 0; 
+}
+/* CLOSE SEARCH ICON */
+.header-search .closeSearch__icon {
+  position: absolute;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 70px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; 
+}
+/* SEARCH INPUT  */
+.search-input input {
+  color: #fff;
+  font-size: 54px;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  outline: 0;
+  font-weight: 200;
+  height: 100vh;
+  width: 100%; 
+}
+.search-input {
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -40px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(40px, 0);
+  transition: all 0.3s ease-in-out;
+  width: 88%; 
+}
+/* HEADER */
+header{
+  padding: 0px;
+  transition: all 0.4s ease 0s;
+  height: 100px;
+  display: grid;
+  align-items: center;
+  z-index: 10;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+header .navbar-brand h1{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+}
+header .navbar-brand i{
+  color: #009f4d;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+header .navbar-brand span{
+  text-transform: none;
+  display: block;
+  font-size: 14px;    
+  padding-left: 46px;
+  font-weight: 600;
+  opacity: .9;
+  color: #fff;
+}
+header .navbar-nav .nav-item{
+  padding: 0 12px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+header .navbar-nav .nav-item.active .nav-link{
+  opacity: 1;
+  color: #fff;
+}
+header .navbar-nav .nav-item .nav-link{
+  transition: all 0.5s ease;
+  padding:14px 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  opacity: .8;
+}
+header .navbar-nav .nav-item:hover .nav-link{
+  opacity: 1;
+  color: #fff;
+}
+header .header-search .search__btn {
+  cursor: pointer;
+}
+header .btn-material{
+  line-height: 45px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background: #009f4d;
+  outline: 0;
+  transform-origin: 50%;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+header .header-search .search__btn .btn-material i{
+  color: #FFF;
+  transition: opacity 0.3s ease-in-out;
+}
+  /* header .header-search .closeSearch__icon{
+    position: absolute;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 70px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  header .header-search .input-search{
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    margin-top: -40px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(40px, 0);
+    transition: all 0.3s ease-in-out;
+    width: 88%;
+  } */
+header .navbar-toggler .navbar-toggler-icon{
+  background-image: none;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  background: #009f4d;
+  border-radius: 4px;
+  text-align: center;
+}
+header .navbar-toggler .navbar-toggler-icon.fa{
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #fff;
+  line-height: 34px;
+}
+header .navbar-nav .dropdown-menu {
+  transform: translateX(-25%);
+  background: #151421;
+  border: 1px solid #151421;
+  border-radius: 8px;
+}
+header .dropdown-menu a{
+  font-size: 15px;
+  color: #fff;
+  background: none;
+  opacity: .8;
+  font-weight: 600;
+  padding: 6px 20px;
+  text-transform: uppercase;
+}
+header .dropdown-menu a:hover{
+  opacity: 1;
+  color: #fff;
+  background-color: #151421;
+}
+header .navbar-collapse{
+  width: 100%;
+}
+@media only screen and (max-width: 991px){
+  header .navbar-nav .dropdown-menu {
+    transform: translateX(0px);
+  }
+  header .container{
+    width: 100%;
+    padding: 0;
+    max-width: 1200px;
+  }
+}
+
 /* GALLERY */
 .gallery {
   background-color: var(--sec-color);
