@@ -369,7 +369,7 @@ header.nav-fixed .navbar-brand h1 {
 .gallery__content .article .item .gallery__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: 0.5s;
 }
 .gallery__content .article .item a:hover .gallery__img {
