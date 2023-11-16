@@ -34,6 +34,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <!-- LIGHTBOX2 -->
+    <!-- OWLCAROUSEL -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+      integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ANIMATE -->
     <link
       rel="stylesheet"
@@ -583,6 +596,73 @@
           </div>
         </div>
       </section>
+      <section class="review">
+        <div class="container py-5 text-center">
+          <div class="review__title">
+            <p>HAPPY CLIENTS FEEDBACK</p>
+            <h3>Reviews and Testimonials</h3>
+          </div>
+          <div class="review__carousel owl-carousel owl-theme">
+            <div class="item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                ducimus neque quo, amet blanditiis veniam ad adipisci ipsum.
+                Minus, recusandae.</p>
+              <div class="review-des justify-content-center">
+                <div class="des-img">
+                  <img class="img-fluid" src="./assets/images/team1.jpg" alt>
+                </div>
+                <div class="des-title">
+                  <h3>John wilson</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                cumque totam fugiat voluptas minima perspiciatis aliquid
+                incidunt commodi deserunt eius?</p>
+              <div class="review-des justify-content-center">
+                <div class="des-img">
+                  <img class="img-fluid" src="./assets/images/team1.jpg" alt>
+                </div>
+                <div class="des-title">
+                  <h3>John wilson</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                cumque totam fugiat voluptas minima perspiciatis aliquid
+                incidunt commodi deserunt eius?</p>
+              <div class="review-des justify-content-center">
+                <div class="des-img">
+                  <img class="img-fluid" src="./assets/images/team1.jpg" alt>
+                </div>
+                <div class="des-title">
+                  <h3>John wilson</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                cumque totam fugiat voluptas minima perspiciatis aliquid
+                incidunt commodi deserunt eius?</p>
+              <div class="review-des justify-content-center">
+                <div class="des-img">
+                  <img class="img-fluid" src="./assets/images/team1.jpg" alt>
+                </div>
+                <div class="des-title">
+                  <h3>John wilson</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
     <!-- BS CSS -->
@@ -617,6 +697,11 @@
         wrapAround: true,
       });
     </script>
+    <!-- OWLCAROUSEL -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- SEARCH FUNCTION -->
     <script>
       $(".search__btn").click(function () {
@@ -640,6 +725,30 @@
         }
       });
     </script>
+    <script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+      margin: 20,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        768: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 1,
+          nav: false,
+          loop: false
+        }
+      }
+    
+})
+</script>
     <!-- Cai nay de nghien cuu them -->
   </body>
 </html>

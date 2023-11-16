@@ -674,7 +674,7 @@ header.nav-fixed .navbar-brand h1 {
   background-image: linear-gradient(-224deg, #e77654, #e5529a);
 }
 
-.progress {
+.progess .progress {
   width: 100%;
   height: 4px;
 }
@@ -780,4 +780,85 @@ header.nav-fixed .navbar-brand h1 {
   top: 90%;
   border-radius: 50%;
   transform: translate(50%, -50%);
+}
+
+/* ___________________________________ */
+
+.review {
+  background-color: var(--sec-color);
+}
+
+.review__title h3 {
+  color: var(--pri-heading);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+.review__title p {
+  color: #7e7d7d;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.review__carousel p {
+  color: #7e7d7d;
+}
+
+.review__carousel .review-des {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.review__carousel .review-des .des-img {
+  width: 75px;
+  height: 75px;
+}
+
+.review-des .des-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+  object-position: top;
+}
+
+.review__carousel .des-title h3 {
+  font-size: 1.2rem;
+  color: var(--pri-heading);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 0;
+}
+
+.review__carousel .des-title {
+  align-self: self-end;
+}
+
+.review__carousel .item {
+  width: 1110px;
+  margin-right: 20px;
+}
+
+.review__carousel .item > p {
+  /* padding: 100px 200px 0; */
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.review .review__carousel button.owl-dot.active span {
+  background: #213364;
+  transform: scale(1.5);
+}
+.review .review__carousel button.owl-dot span {
+  transition: 200ms linear;
+}
+.review .review__carousel button.owl-dot:hover span {
+  background: #213364;
+  transform: scale(1.5);
 }
