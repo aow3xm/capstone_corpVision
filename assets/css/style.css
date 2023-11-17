@@ -841,14 +841,8 @@ header.nav-fixed .navbar-brand h1 {
 }
 
 .review__carousel .item {
-  width: 1110px;
-  margin-right: 20px;
-}
-
-.review__carousel .item > p {
-  /* padding: 100px 200px 0; */
-  font-size: 1rem;
-  letter-spacing: 1px;
+  min-width: 300px;
+  max-width: 1100px;
 }
 
 .review .review__carousel button.owl-dot.active span {
@@ -861,4 +855,14 @@ header.nav-fixed .navbar-brand h1 {
 .review .review__carousel button.owl-dot:hover span {
   background: #213364;
   transform: scale(1.5);
+}
+
+.des-quote {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+.des-quote p {
+  letter-spacing: 1px;
+  max-width: 900px;
 }
