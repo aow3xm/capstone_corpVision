@@ -857,12 +857,12 @@ header.nav-fixed .navbar-brand h1 {
   transform: scale(1.5);
 }
 
-.des-quote {
+.review__carousel .des-quote {
   margin-top: 75px;
   display: flex;
   justify-content: center;
 }
-.des-quote p {
+.review__carousel .des-quote p {
   letter-spacing: 1px;
   max-width: 900px;
 }
