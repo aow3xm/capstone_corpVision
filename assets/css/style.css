@@ -31,7 +31,27 @@ body a:hover {
   --bg-color: #fff;
   --primary-color: #009f4d;
 }
+body.dark-mode {
+  --bg-color: #151421;
+  background-color: var(--bg-color) !important;
+}
+body.dark-mode section {
+  --pri-color: #151421;
+  --pri-heading: #eee;
+  --sec-color: #213364;
+  --font-color: #c2c2c2;
+  --bg-color: #151421;
+  --heading-color: #eee;
+  --pri-boder: rgba(255, 255, 255, 0.2);
+  --bg-grey: #100f19;
+  background-color: var(--pri-color);
+}
 
+body.dark-mode .features,
+.gallery,
+.review {
+  background-color: var(--bg-grey) !important;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -260,6 +280,10 @@ header.expandedMore {
 header.nav-fixed.expandedMore {
   height: 470px;
 }
+header .navbar {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 header .navbar-brand h1 {
   margin: 0;
   padding: 0;
@@ -441,7 +465,7 @@ header.nav-fixed .navbar-brand h1 {
     font-size: 40px;
     line-height: 1.1;
     margin-bottom: 18px;
-    color: var(--pri-color);
+    color: #fff;
     max-width: 500px;
     font-weight: 600;
     text-align: left;
@@ -453,14 +477,11 @@ header.nav-fixed .navbar-brand h1 {
   object-fit: cover;
 }
 
-.coCarousel .carousel-item .carousel-caption {
-  text-align: left;
-}
 .coCarousel .carousel-item h3 {
   font-size: 55px;
   line-height: 1.1;
   margin-bottom: 18px;
-  color: var(--pri-color);
+  color: #fff;
   max-width: 800px;
   font-weight: 600;
   text-align: left;
@@ -469,7 +490,7 @@ header.nav-fixed .navbar-brand h1 {
   font-size: 20px;
   line-height: 30px;
   max-width: 600px;
-  color: var(--pri-color);
+  color: #fff;
   letter-spacing: 2px;
   opacity: 0.9;
   text-align: left;
@@ -485,9 +506,27 @@ header.nav-fixed .navbar-brand h1 {
 }
 .coCarousel .carousel-item .carousel-caption {
   position: relative;
-  inset: -80% 0 0 0;
+  inset: -60% 0 0 0;
   transform: translateY(-25%);
-  z-index: 100;
+  text-align: left;
+}
+@media only screen and (max-width: 991px) {
+  .coCarousel .carousel-item .carousel-caption {
+    inset: -80% 0 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .coCarousel .carousel-item .carousel-caption {
+    inset: -85% 0 0 0;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .coCarousel .carousel-item h3 {
+    font-size: 40px;
+  }
+  .coCarousel .carousel-item p {
+    font-size: 18px;
+  }
 }
 .coCarousel .carousel-item a {
   padding: 12px 45px;
@@ -637,6 +676,10 @@ header.nav-fixed .navbar-brand h1 {
   box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
   max-width: 250px;
   margin: 0 auto;
+  background-color: var(--bg-color);
+}
+.services .services__card .card__infor span {
+  color: var(--font-color);
 }
 .services .services__card {
   cursor: pointer;
@@ -774,6 +817,10 @@ header.nav-fixed .navbar-brand h1 {
   font-size: 1rem;
   line-height: 20px;
 }
+
+.progess__content h4.progess-title {
+  color: var(--pri-heading);
+}
 .progess .item1 .progess-title {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -903,6 +950,7 @@ header.nav-fixed .navbar-brand h1 {
   border-radius: 50%;
   transform: translate(50%, -50%);
 }
+
 .progress-bar.gradient-4::before {
   content: "";
   position: absolute;
@@ -1000,14 +1048,17 @@ header.nav-fixed .navbar-brand h1 {
   min-width: 300px;
   max-width: 1100px;
 }
-
-.review .review__carousel button.owl-dot.active span {
-  background: #213364;
-  transform: scale(1.5);
-}
 .review .review__carousel button.owl-dot span {
+  background: #213364;
+  opacity: 0.5;
   transition: 200ms linear;
 }
+.review .review__carousel button.owl-dot.active span {
+  background: #213364;
+  opacity: 1;
+  transform: scale(1.5);
+}
+
 .review .review__carousel button.owl-dot:hover span {
   background: #213364;
   transform: scale(1.5);
