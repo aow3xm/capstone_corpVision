@@ -62,7 +62,6 @@ body a:hover {
 
 .gg-sun {
   position: relative;
-  transform: scale(var(--ggs, 1));
   height: 24px;
   background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
   border-radius: 100px;
@@ -72,7 +71,7 @@ body a:hover {
 .gg-moon {
   overflow: hidden;
   position: relative;
-  transform: rotate(-135deg) scale(var(--ggs, 1));
+  transform: rotate(-135deg);
   width: 20px;
   height: 20px;
   border: 2px solid;
@@ -90,7 +89,7 @@ body a:hover {
   display: block;
   box-sizing: border-box;
   border-radius: 50%;
-  color: var(--heading-color); }
+  color: var(--pri-heading); }
 
 .gg-moon:after {
   content: "";
@@ -119,6 +118,12 @@ body a:hover {
   border-left: 4px solid;
   left: -6px;
   top: 5px; }
+.nav-fixed .gg-sun,
+.nav-fixed .gg-sun:after,
+.nav-fixed .gg-sun::before {
+  display: block;
+  box-sizing: border-box;
+  color: var(--pri-heading); }
 
 .gg-sun:before {
   transform: rotate(-45deg); }
