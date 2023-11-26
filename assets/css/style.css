@@ -39,34 +39,47 @@ body a:hover {
 /* SWITCH MODE BTN  */
 .theme-switch-wrapper {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .theme-switch-wrapper em {
   margin-left: 10px;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 .theme-switch {
   display: inline-block;
   position: relative;
-  margin: 0; }
+  margin: 0;
+}
 
 .theme-switch input {
-  display: none; }
+  display: none;
+}
 
 /*-- //toggle switch --*/
 /*-- dark and light mode styling --*/
 .mode-container {
   width: 24px;
   height: 24px;
-  padding: 1px 0; }
+  padding: 1px 0;
+}
 
 .gg-sun {
   position: relative;
   height: 24px;
-  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat
+      5px -6px/2px 6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px
+      6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px
+      2px;
   border-radius: 100px;
   box-shadow: inset 0 0 0 2px;
-  border: 6px solid transparent; }
+  border: 6px solid transparent;
+}
 
 .gg-moon {
   overflow: hidden;
@@ -75,21 +88,24 @@ body a:hover {
   width: 20px;
   height: 20px;
   border: 2px solid;
-  border-bottom: 2px solid transparent; }
+  border-bottom: 2px solid transparent;
+}
 
 .gg-moon,
 .gg-moon:after {
   display: block;
   box-sizing: border-box;
   border-radius: 50%;
-  color: #eee; }
+  color: #eee;
+}
 
 .nav-fixed .gg-moon,
 .nav-fixed .gg-moon:after {
   display: block;
   box-sizing: border-box;
   border-radius: 50%;
-  color: var(--pri-heading); }
+  color: var(--pri-heading);
+}
 
 .gg-moon:after {
   content: "";
@@ -99,7 +115,8 @@ body a:hover {
   border: 2px solid transparent;
   box-shadow: 0 0 0 2px;
   top: 8px;
-  left: 2px; }
+  left: 2px;
+}
 
 .gg-sun,
 .gg-sun:after,
@@ -107,7 +124,8 @@ body a:hover {
   box-sizing: border-box;
   display: block;
   width: 24px;
-  color: #eee; }
+  color: #eee;
+}
 
 .gg-sun:after,
 .gg-sun:before {
@@ -117,32 +135,40 @@ body a:hover {
   border-right: 4px solid;
   border-left: 4px solid;
   left: -6px;
-  top: 5px; }
+  top: 5px;
+}
 .nav-fixed .gg-sun,
 .nav-fixed .gg-sun:after,
 .nav-fixed .gg-sun::before {
   display: block;
   box-sizing: border-box;
-  color: var(--pri-heading); }
+  color: var(--pri-heading);
+}
 
 .gg-sun:before {
-  transform: rotate(-45deg); }
+  transform: rotate(-45deg);
+}
 
 .gg-sun:after {
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+}
 
 .mode-container i.gg-sun {
-  display: none; }
+  display: none;
+}
 
 .mode-container i.gg-moon {
-  display: block; }
+  display: block;
+}
 
 input:checked + .mode-container i.gg-sun {
-  display: block; }
+  display: block;
+}
 
 input:checked + .mode-container i.gg-moon {
-  display: none; }
-.mobile-position{
+  display: none;
+}
+.mobile-position {
   position: absolute;
   top: 30px;
   right: 70px;
@@ -205,10 +231,10 @@ input::-ms-input-placeholder {
   transition: all 0.3s ease-in-out;
   width: 88%;
 }
-.searchTogglePossition{
+.searchTogglePossition {
   position: absolute;
   top: 20px;
-  right:90px;
+  right: 90px;
 }
 /* HEADER */
 header {
@@ -220,18 +246,18 @@ header {
   z-index: 10;
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
-header.expanded{
+header.expanded {
   height: 330px;
   background-color: rgba(0, 0, 0, 0.7);
 }
-header.nav-fixed.expanded{
+header.nav-fixed.expanded {
   height: 330px;
-  color:var(--bg-color);
+  color: var(--bg-color);
 }
-header.expandedMore{
+header.expandedMore {
   height: 470px;
 }
-header.nav-fixed.expandedMore{
+header.nav-fixed.expandedMore {
   height: 470px;
 }
 header .navbar-brand h1 {
@@ -393,10 +419,10 @@ header.nav-fixed .navbar-brand h1 {
     padding: 0;
     max-width: 1200px;
   }
-  header.dropDownExpand{
-  height: 530px;
+  header.dropDownExpand {
+    height: 530px;
   }
-  .header.nav-fixed.dropDownExpand{
+  .header.nav-fixed.dropDownExpand {
     height: 530px;
   }
 }
@@ -458,10 +484,10 @@ header.nav-fixed .navbar-brand h1 {
   background-color: var(--layer);
 }
 .coCarousel .carousel-item .carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 0px;
+  position: relative;
+  inset: -80% 0 0 0;
   transform: translateY(-25%);
+  z-index: 100;
 }
 .coCarousel .carousel-item a {
   padding: 12px 45px;
