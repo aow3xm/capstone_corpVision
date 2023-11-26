@@ -36,6 +36,112 @@ body a:hover {
   display: flex;
   flex-wrap: wrap;
 }
+/* SWITCH MODE BTN  */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center; }
+
+.theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem; }
+
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  margin: 0; }
+
+.theme-switch input {
+  display: none; }
+
+/*-- //toggle switch --*/
+/*-- dark and light mode styling --*/
+.mode-container {
+  width: 24px;
+  height: 24px;
+  padding: 1px 0; }
+
+.gg-sun {
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  height: 24px;
+  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent; }
+
+.gg-moon {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom: 2px solid transparent; }
+
+.gg-moon,
+.gg-moon:after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: #eee; }
+
+.nav-fixed .gg-moon,
+.nav-fixed .gg-moon:after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: var(--heading-color); }
+
+.gg-moon:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  left: 2px; }
+
+.gg-sun,
+.gg-sun:after,
+.gg-sun:before {
+  box-sizing: border-box;
+  display: block;
+  width: 24px;
+  color: #eee; }
+
+.gg-sun:after,
+.gg-sun:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px; }
+
+.gg-sun:before {
+  transform: rotate(-45deg); }
+
+.gg-sun:after {
+  transform: rotate(45deg); }
+
+.mode-container i.gg-sun {
+  display: none; }
+
+.mode-container i.gg-moon {
+  display: block; }
+
+input:checked + .mode-container i.gg-sun {
+  display: block; }
+
+input:checked + .mode-container i.gg-moon {
+  display: none; }
+.mobile-position{
+  position: absolute;
+  top: 30px;
+  right: 70px;
+}
 /* SEARCH ACTIVE */
 body.search-active {
   overflow: hidden;
@@ -94,6 +200,11 @@ input::-ms-input-placeholder {
   transition: all 0.3s ease-in-out;
   width: 88%;
 }
+.searchTogglePossition{
+  position: absolute;
+  top: 20px;
+  right:90px;
+}
 /* HEADER */
 header {
   padding: 0px;
@@ -103,6 +214,20 @@ header {
   align-items: center;
   z-index: 10;
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+header.expanded{
+  height: 330px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+header.nav-fixed.expanded{
+  height: 330px;
+  color:var(--bg-color);
+}
+header.expandedMore{
+  height: 470px;
+}
+header.nav-fixed.expandedMore{
+  height: 470px;
 }
 header .navbar-brand h1 {
   margin: 0;
@@ -166,26 +291,6 @@ header .header-search .search__btn .btn-material i {
   color: #fff;
   transition: opacity 0.3s ease-in-out;
 }
-/* header .header-search .closeSearch__icon{
-    position: absolute;
-    color: #FFF;
-    cursor: pointer;
-    font-size: 70px;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-  }
-  header .header-search .input-search{
-    height: 80px;
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    margin-top: -40px;
-    pointer-events: none;
-    opacity: 0;
-    transform: translate(40px, 0);
-    transition: all 0.3s ease-in-out;
-    width: 88%;
-  } */
 header .navbar-toggler .navbar-toggler-icon {
   background-image: none;
   padding: 0;
@@ -283,6 +388,12 @@ header.nav-fixed .navbar-brand h1 {
     padding: 0;
     max-width: 1200px;
   }
+  header.dropDownExpand{
+  height: 530px;
+  }
+  .header.nav-fixed.dropDownExpand{
+    height: 530px;
+  }
 }
 /* CAROUSEL */
 .coCarousel .carousel-item {
@@ -344,7 +455,8 @@ header.nav-fixed .navbar-brand h1 {
 .coCarousel .carousel-item .carousel-caption {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 0px;
+  transform: translateY(-25%);
 }
 .coCarousel .carousel-item a {
   padding: 12px 45px;
