@@ -8,7 +8,7 @@ themeSwitch.addEventListener('change', function() {
 // tắt show nav khi resize trình duyệt
 window.addEventListener('resize', function() {
     var header = document.querySelector('header#site-header')
-    var nav = document.getElementById('navbarSupportedContent');
+    var nav = document.querySelector('#navbarSupportedContent');
     var windowWidth = window.innerWidth;
     if (windowWidth >= 768) {
       header.classList.remove('expanded');
