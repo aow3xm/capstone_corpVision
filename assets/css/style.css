@@ -459,7 +459,6 @@ header.nav-fixed .navbar-brand h1 {
   header.nav-fixed.expandedMore {
     height: 470px;
   }
-
 }
 /* CAROUSEL */
 .coCarousel .carousel-item {
@@ -564,7 +563,7 @@ header.nav-fixed .navbar-brand h1 {
 .coCarousel .carousel-control .carousel-next {
   position: absolute;
   right: 20px;
-  bottom: 50px;
+  bottom: 100px;
   width: 50px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -576,7 +575,7 @@ header.nav-fixed .navbar-brand h1 {
 .coCarousel .carousel-control .carousel-prev {
   position: absolute;
   right: 80px;
-  bottom: 50px;
+  bottom: 100px;
   width: 50px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.2);
